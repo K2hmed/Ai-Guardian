@@ -202,3 +202,4 @@ while camera_video.isOpened():
 # Release the VideoCapture Object and close the windows.
 camera_video.release()
 cv2.destroyAllWindows()
+
