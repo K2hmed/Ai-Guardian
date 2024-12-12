@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    android:orientation="vertical"
+    android:background="@color/off_white"
+    tools:context="com.example.mysos.DashboardActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_view"
+        />
+
+    <ImageView
+        android:id="@+id/btnMenu"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="15dp"
+        android:src="@drawable/ic_baseline_menu_24"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:textSize="36sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <View
+        android:id="@+id/contactBox"
+        android:layout_width="171dp"
+        android:layout_height="200dp"
+        android:background="@drawable/c_box"
+        android:layout_marginTop="115dp"
+        android:layout_marginStart="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/contactIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/baseline_contacts_24"
+        android:layout_marginTop="145dp"
+        android:layout_marginStart="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact List"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="14dp"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:id="@+id/tvContactList"/>
+
+    <View
+        android:id="@+id/tutorialBox"
+        android:layout_width="171dp"
+        android:layout_height="200dp"
+        android:background="@drawable/c_box"
+        android:layout_marginTop="115dp"
+        android:layout_marginStart="183dp"
+        />
+
+    <ImageView
+        android:id="@+id/tutorialIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/baseline_desktop_windows_24"
+        android:layout_marginTop="145dp"
+        android:layout_marginStart="220dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tutorials"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="210dp"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:id="@+id/tvTutorial"/>
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:background="@drawable/box"
+        android:layout_marginTop="325dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/baseline_add_alert_24"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="123dp"
+        />
+
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="SHAKE DEVICE TO SEND ALERT NOTIFICATION"
+        android:layout_marginTop="490dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textAlignment="center"/>
+
+
+
+</RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/side_view"
+        android:layout_gravity="start">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Objective"
+                android:padding="10dp"
+                android:textColor="@color/off_white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:id="@+id/tvObjetive"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Creators"
+                android:padding="10dp"
+                android:textColor="@color/off_white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:id="@+id/tvCreators"/>
+        </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>
